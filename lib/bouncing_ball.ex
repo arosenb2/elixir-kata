@@ -36,9 +36,5 @@ defmodule BouncingBall do
   def drop(_h, bounce, _window) when bounce <= 0, do: -1
   def drop(_h, bounce, _window) when bounce >= 1, do: -1
   def drop(h, _bounce, window) when window >= h, do: -1
-  def drop(h, bounce, window), do: next(h, bounce, window, 1)
-
-  def next(h, _bounce, window, acc) when h <= window, do: acc
-  def next(h, bounce, window, acc) when h * bounce > window, do: next(h * bounce, bounce, window, acc + 2)
-  def next(h, bounce, window, acc), do: next(h * bounce, bounce, window, acc)
+  def drop(h, bounce, window), do: 2 + drop(h * bounce, bounce, window)
 end
