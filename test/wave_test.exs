@@ -1,4 +1,6 @@
 defmodule WaveTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Wave, only: [wave: 1]

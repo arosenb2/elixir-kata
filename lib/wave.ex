@@ -44,8 +44,8 @@ defmodule Wave do
   end
 
   @spec format(String.t(), {String.t(), non_neg_integer()}) :: nil | String.t()
-  def format(_letters, { " ", _index }), do: nil
-  def format(letters, { letter, index }) do
+  def format(_letters, {" ", _index}), do: nil
+  def format(letters, {letter, index}) do
     String.slice(letters, 0, index) <> String.upcase(letter) <> String.slice(letters, index + 1, byte_size(letters))
   end
 end

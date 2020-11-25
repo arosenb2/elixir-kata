@@ -1,4 +1,6 @@
 defmodule PolygonTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Polygon, only: [area_of_polygon_inside_circle: 2]

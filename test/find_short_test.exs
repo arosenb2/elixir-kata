@@ -1,4 +1,6 @@
 defmodule FindShortTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import FindShort, only: [solution: 1]
@@ -14,7 +16,7 @@ defmodule FindShortTest do
       {"lets talk about javascript the best language", 3},
       {"i want to travel the world writing code one day", 1},
       {"Lets all go on holiday somewhere very cold", 2}
-    ], fn {str,expected} ->
+    ], fn {str, expected} ->
       actual = solution(str)
       assert actual == expected
     end

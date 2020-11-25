@@ -1,4 +1,6 @@
 defmodule ArabicToRomanTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import ArabicToRoman, only: [solution: 1]

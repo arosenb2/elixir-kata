@@ -1,4 +1,6 @@
 defmodule EncryptorTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Encryptor, only: [rot13: 1]

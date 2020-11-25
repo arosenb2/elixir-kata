@@ -1,4 +1,6 @@
 defmodule SongDecoderTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import SongDecoder, only: [decode_song: 1]

@@ -1,4 +1,6 @@
 defmodule BouncingBallTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import BouncingBall, only: [drop: 3]

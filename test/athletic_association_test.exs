@@ -1,4 +1,6 @@
 defmodule AthleticAssociationTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import AthleticAssociation, only: [stat: 1]

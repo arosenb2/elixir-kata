@@ -1,4 +1,6 @@
 defmodule LotteryTicketTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import LotteryTicket, only: [bingo: 2]

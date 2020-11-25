@@ -1,4 +1,6 @@
 defmodule SpinTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Spin, only: [spin_words: 1]

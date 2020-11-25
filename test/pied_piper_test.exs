@@ -1,4 +1,6 @@
 defmodule PiedPiperTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import PiedPiper, only: [count_deaf_rats: 1]

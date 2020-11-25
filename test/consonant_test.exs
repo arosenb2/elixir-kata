@@ -1,4 +1,6 @@
 defmodule ConsonantTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Consonant, only: [solve: 1]
@@ -7,7 +9,7 @@ defmodule ConsonantTest do
 
   doctest Consonant
 
-  def test_run(s,sol), do: assert solve(s) == sol
+  def test_run(s, sol), do: assert solve(s) == sol
 
   test "zodiac" do test_run("zodiac", 26) end
   test "chruschtschov" do test_run("chruschtschov", 80) end

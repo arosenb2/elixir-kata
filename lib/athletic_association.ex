@@ -100,10 +100,11 @@ defmodule AthleticAssociation do
   end
 
   defp median(list) do
-    with sorted = Enum.sort(list) do
-      cond do
-        is_even(list) -> even_median(sorted)
-        true-> odd_median(sorted)
+    with sorted <- Enum.sort(list) do
+      if is_even(list) do
+        even_median(sorted)
+      else
+        odd_median(sorted)
       end
     end
     |> format()

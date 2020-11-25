@@ -1,4 +1,6 @@
 defmodule CamelCaseTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import CamelCase, only: [to_camel_case: 1]

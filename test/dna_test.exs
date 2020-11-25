@@ -1,4 +1,6 @@
 defmodule DnaTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Dna, only: [dna_strand: 1]

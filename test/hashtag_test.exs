@@ -1,4 +1,6 @@
 defmodule HashtagTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import Hashtag, only: [generate: 1]

@@ -1,4 +1,6 @@
 defmodule PersistentBuggerTest do
+  @moduledoc false
+
   use ExUnit.Case
 
   import PersistentBugger, only: [persistence: 1]
