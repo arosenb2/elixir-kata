@@ -5,8 +5,6 @@ defmodule FindShortTest do
 
   import FindShort, only: [solution: 1]
 
-  @moduletag :capturelog
-
   doctest FindShort
 
   test "Sample tests" do

@@ -5,8 +5,6 @@ defmodule ArabicToRomanTest do
 
   import ArabicToRoman, only: [solution: 1]
 
-  @moduletag :capture_log
-
   doctest ArabicToRoman
 
   test "converts from arabic to roman" do

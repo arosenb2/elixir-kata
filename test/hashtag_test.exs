@@ -5,7 +5,7 @@ defmodule HashtagTest do
 
   import Hashtag, only: [generate: 1]
 
-  @moduletag :capture_log
+
 
   doctest Hashtag
 

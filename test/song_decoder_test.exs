@@ -5,7 +5,7 @@ defmodule SongDecoderTest do
 
   import SongDecoder, only: [decode_song: 1]
 
-  @moduletag :capture_log
+
 
   doctest SongDecoder
 

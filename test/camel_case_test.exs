@@ -5,7 +5,7 @@ defmodule CamelCaseTest do
 
   import CamelCase, only: [to_camel_case: 1]
 
-  @moduletag :capture_log
+
 
   doctest CamelCase
 

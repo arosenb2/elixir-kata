@@ -5,7 +5,7 @@ defmodule LotteryTicketTest do
 
   import LotteryTicket, only: [bingo: 2]
 
-  @moduletag :capture_log
+
 
   doctest LotteryTicket
 

@@ -5,7 +5,7 @@ defmodule PeopleTest do
 
   import People, only: [list: 1]
 
-  @moduletag :capture_log
+
 
   doctest People
 

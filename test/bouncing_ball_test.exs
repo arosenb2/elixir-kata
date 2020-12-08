@@ -5,7 +5,7 @@ defmodule BouncingBallTest do
 
   import BouncingBall, only: [drop: 3]
 
-  @moduletag :capture_log
+
 
   doctest BouncingBall
 

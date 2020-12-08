@@ -5,7 +5,7 @@ defmodule PiedPiperTest do
 
   import PiedPiper, only: [count_deaf_rats: 1]
 
-  @moduletag :capture_log
+
 
   doctest PiedPiper
 

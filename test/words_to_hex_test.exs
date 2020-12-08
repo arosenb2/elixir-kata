@@ -5,7 +5,7 @@ defmodule WordsToHexTest do
 
   import WordsToHex, only: [words_to_hex: 1]
 
-  @moduletag :capture_log
+
 
   doctest WordsToHex
 

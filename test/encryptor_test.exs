@@ -5,7 +5,7 @@ defmodule EncryptorTest do
 
   import Encryptor, only: [rot13: 1]
 
-  @moduletag :capture_log
+
 
   doctest Encryptor
 

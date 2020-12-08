@@ -5,7 +5,7 @@ defmodule WaveTest do
 
   import Wave, only: [wave: 1]
 
-  @moduletag :capture_log
+
 
   doctest Wave
 

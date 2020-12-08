@@ -5,7 +5,7 @@ defmodule PolygonTest do
 
   import Polygon, only: [area_of_polygon_inside_circle: 2]
 
-  @moduletag :capture_log
+
 
   doctest Polygon
 

@@ -5,7 +5,7 @@ defmodule DnaTest do
 
   import Dna, only: [dna_strand: 1]
 
-  @moduletag :capture_log
+
 
   doctest Dna
 

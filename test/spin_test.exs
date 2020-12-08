@@ -5,7 +5,7 @@ defmodule SpinTest do
 
   import Spin, only: [spin_words: 1]
 
-  @moduletag :capture_log
+
 
   doctest Spin
 

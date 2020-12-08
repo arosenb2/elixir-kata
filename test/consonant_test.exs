@@ -5,7 +5,7 @@ defmodule ConsonantTest do
 
   import Consonant, only: [solve: 1]
 
-  @moduletag :capture_log
+
 
   doctest Consonant
 

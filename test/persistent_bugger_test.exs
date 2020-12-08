@@ -5,7 +5,7 @@ defmodule PersistentBuggerTest do
 
   import PersistentBugger, only: [persistence: 1]
 
-  @moduletag :capture_log
+
 
   def testing(numtest, n, ans) do
     IO.puts("Test #{numtest}")

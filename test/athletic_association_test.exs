@@ -5,7 +5,7 @@ defmodule AthleticAssociationTest do
 
   import AthleticAssociation, only: [stat: 1]
 
-  @moduletag :capture_log
+
 
   doctest AthleticAssociation
 

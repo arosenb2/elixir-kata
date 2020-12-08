@@ -5,7 +5,7 @@ defmodule ProdFibTest do
 
   import ProdFib, only: [product_fib: 1]
 
-  @moduletag :capture_log
+
 
   doctest ProdFib
 
