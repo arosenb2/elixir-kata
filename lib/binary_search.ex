@@ -19,17 +19,16 @@ defmodule BinarySearch do
 
   @spec search(tuple, integer) :: {:ok, integer} | :not_found
   def search({}, _key), do: :not_found
-  def search(numbers, key), do: search(numbers, key, 0, tuple_size(numbers))
+  def search(numbers, key), do: search(numbers, key, 0, tuple_size(numbers) - 1)
 
   @spec search(tuple, integer, integer, integer) :: {:ok, non_neg_integer} | :not_found
   def search(_numbers, _key, low, high) when high < low, do: :not_found
-  def search(numbers, _key, low, _high) when low >= tuple_size(numbers), do: :not_found
   def search(numbers, key, low, high) do
-    mid_index = low + div(high - low, 2)
+    mid_index = div(low + high, 2)
     case elem(numbers, mid_index) do
       ^key -> {:ok, mid_index}
-      mid_value when key < mid_value -> search(numbers, key, low, mid_index - 1)
-      mid_value when key > mid_value -> search(numbers, key, mid_index + 1, high)
+      mid_value when mid_value < key -> search(numbers, key, mid_index + 1, high)
+      mid_value when mid_value > key  -> search(numbers, key, low, mid_index - 1)
     end
   end
 end
