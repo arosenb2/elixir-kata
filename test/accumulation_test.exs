@@ -1,9 +1,11 @@
 defmodule AccumulationTest do
   @moduledoc false
 
-  @doctest Accumulate
-
   use ExUnit.Case
+
+  import Accumulate
+
+  doctest Accumulate
 
   test "test accumulate empty list" do
     assert Accumulate.accumulate([], fn n -> n * n end) == []

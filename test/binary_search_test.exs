@@ -1,7 +1,9 @@
 defmodule BinarySearchTest do
   use ExUnit.Case
 
-  @doctest BinarySearch
+  import BinarySearch
+
+  doctest BinarySearch
 
   @tag :pending
   test "finds a value in a tuple with one element" do
