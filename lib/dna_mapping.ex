@@ -1,4 +1,4 @@
-defmodule Dna do
+defmodule DnaMapping do
   @moduledoc false
 
   @doc """
@@ -14,10 +14,10 @@ defmodule Dna do
   More similar exercise are found here http://rosalind.info/problems/list-view/ (source)
 
   ## Examples
-  iex> dna_strand("ATTGC")
+  iex> DnaMapping.dna_strand("ATTGC")
   "TAACG"
 
-  iex> dna_strand("GTAT")
+  iex> DnaMapping.dna_strand("GTAT")
   "CATA"
   """
   def dna_strand(dna_str) do

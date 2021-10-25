@@ -1,4 +1,4 @@
-defmodule DNA do
+defmodule DnaEncoding do
   @moduledoc false
 
   def encode_nucleotide(?A), do: 0b0001
